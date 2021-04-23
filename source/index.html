@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body class="page">
+    <header class="page__header header header--nojs header--active">
+      <div class="header__container container">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="логотип" width="68" height="21" />
+        </div>
 
-<body class="page">
-  <header class="page__header header"></header>
+        <div class="header__toggle toggle">
+          <button class="toggle__button" aria-label="toggle menu" type="button">
+            <span class="toggle__icon"></span>
+          </button>
+        </div>
 
-  <main class="page__main">
-    <section class="hero"></section>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#features">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#types">Виды велосипедов</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <section class="form"></section>
+    <main class="page__main">
+      <section class="hero"></section>
 
-    <section class="features"></section>
+      <section class="form"></section>
 
-    <section class="types"></section>
+      <section class="features"></section>
 
-    <section class="video"></section>
+      <section class="types"></section>
 
-    <section class="address"></section>
-  </main>
+      <section class="video"></section>
 
-  <footer class="page__footer footer">
+      <section class="address"></section>
+    </main>
 
-    <article class="contacts"></article>
-
-  </footer>
-</body>
-
+    <footer class="page__footer footer">
+      <article class="contacts"></article>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>

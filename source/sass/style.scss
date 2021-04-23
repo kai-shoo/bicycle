@@ -1,5 +1,9 @@
 @import "fonts.scss";
 @import "global.scss";
+@import "variables.scss";
 
-@import "blocks/page.scss";
+@import "ui.scss";
+@import "blocks/toggle.scss";
+@import "blocks/nav.scss";
 @import "blocks/header.scss";
+@import "blocks/page.scss";
