@@ -3,7 +3,13 @@
 @import "variables.scss";
 
 @import "ui.scss";
+
+@import "blocks/page.scss";
+
 @import "blocks/toggle.scss";
 @import "blocks/nav.scss";
 @import "blocks/header.scss";
-@import "blocks/page.scss";
+
+@import "blocks/footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/address.scss";

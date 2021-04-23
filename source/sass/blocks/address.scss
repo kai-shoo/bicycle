@@ -1,0 +1,44 @@
+.address {
+  text-align: center;
+}
+
+.address__container {
+  @media (max-width: $mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.address > h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $address-header;
+  text-align: center;
+}
+
+.address > p {
+  font-size: 17px;
+  line-height: 31px;
+  color: rgba($address, 0.7);
+}
+
+.address__map {
+  text-align: center;
+  width: 100%;
+}
+
+.address__map > img {
+  object-fit: cover;
+
+  @media (max-width: $tablet) {
+    height: 545px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    height: 245px;
+    width: 100%;
+  }
+}
