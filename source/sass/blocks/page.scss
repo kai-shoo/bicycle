@@ -7,6 +7,10 @@
   font-family: $font-family;
   font-size: 20px;
   color: black;
+
+  &--block {
+    overflow: hidden;
+  }
 }
 
 .page__header {
