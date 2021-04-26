@@ -1,0 +1,58 @@
+.about > h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+
+  color: $about-header;
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  counter-reset: listCounter;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 263px;
+
+  font-size: 22px;
+  line-height: 34px;
+
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  counter-increment: listCounter;
+
+  &::before {
+    content: "0" counter(listCounter);
+
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+
+    text-align: center;
+    letter-spacing: -1.27273px;
+
+    color: $about-counter;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+}
