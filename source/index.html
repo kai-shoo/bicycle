@@ -131,9 +131,35 @@
         </ul>
       </section>
 
-      <section class="video"></section>
-
-      <section class="address"></section>
+      <section class="video">
+        <div class="video__container container">
+          <h2>Видео про велосипеды</h2>
+          <p>
+            В этом видео мы подробно расскажем про особенности выбора велосипеда
+            для себя.
+          </p>
+          <div class="video__player">
+            <div class="video__preview">
+              <img
+                src="img/video-preview.jpg"
+                srcset="img/video-preview@2x.jpg 2x"
+                alt="чёрный велоспед, руль повернут на 45 градусов"
+              />
+            </div>
+            <div
+              class="video__button-play"
+              aria-label="Воспроизвести видео"
+              aria-roledescription="button"
+            >
+              <svg width="65" height="65">
+                <use
+                  xlink:href="img/sprite_auto.svg#icon-video-play-button"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="address page__address">
         <div class="address__container container">
