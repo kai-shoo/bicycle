@@ -39,11 +39,11 @@
   height: 1px;
   background: $toggle;
 
-  transition: 0.5s;
   transform: translate(-50%, -50%);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
 
   &::before,
   &::after {
@@ -68,7 +68,7 @@
   .header--active & {
     background: rgba(0, 0, 0, 0);
 
-    &:before {
+    &::before {
       top: 0;
       background: $toggle-close;
       transform: translateX(-50%) rotate(135deg) scaleY(1.4);
