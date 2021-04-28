@@ -85,9 +85,9 @@
   height: 100%;
 }
 
-.video__preview > img {
+.video__preview img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

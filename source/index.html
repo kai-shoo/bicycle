@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="html academy grading" />
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link
@@ -56,11 +57,17 @@
           </div>
           <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           <div class="hero__image">
-            <img
-              src="img/hero-bicycle.jpg"
-              alt="чёрный спортивный стильный велосипед на темном фоне"
-              srcset="img/hero-bicycle@2x.jpg 2x"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/hero-bicycle.webp, img/hero-bicycle@x.webp 2x"
+              />
+              <img
+                src="img/hero-bicycle.jpg"
+                alt="чёрный спортивный стильный велосипед на темном фоне"
+                srcset="img/hero-bicycle@2x.jpg 2x"
+              />
+            </picture>
           </div>
         </div>
 
@@ -112,14 +119,20 @@
           <li class="types__item">
             <figure class="types__figure">
               <div class="types__image">
-                <img
-                  src="img/road-bicycle.jpg"
-                  srcset="img/road-bicycle@2x.jpg 2x"
-                  alt="хромированный велоспипед на фоне кирпичной стены с зеленью свисающей сверху"
-                  loading="lazy"
-                  width="342px"
-                  height="503px"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/road-bicycle.webp, img/road-bicycle@x.webp 2x"
+                  />
+                  <img
+                    src="img/road-bicycle.jpg"
+                    srcset="img/road-bicycle@2x.jpg 2x"
+                    alt="хромированный велоспипед на фоне кирпичной стены с зеленью свисающей сверху"
+                    loading="lazy"
+                    width="342px"
+                    height="503px"
+                  />
+                </picture>
               </div>
               <figcaption class="types__caption">Дорожный велосипед</figcaption>
             </figure>
@@ -127,14 +140,23 @@
           <li class="types__item">
             <figure class="types__figure">
               <div class="types__image">
-                <img
-                  src="img/mountain-bicycle.jpg"
-                  srcset="img/mountain-bicycle@2x.jpg 2x"
-                  alt="Чёрный велосипед с толтыми шинами на холме, смотрит в сторону гор"
-                  loading="lazy"
-                  width="342px"
-                  height="566px"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/mountain-bicycle.webp,
+                      img/mountain-bicycle@x.webp 2x
+                    "
+                  />
+                  <img
+                    src="img/mountain-bicycle.jpg"
+                    srcset="img/mountain-bicycle@2x.jpg 2x"
+                    alt="Чёрный велосипед с толтыми шинами на холме, смотрит в сторону гор"
+                    loading="lazy"
+                    width="342px"
+                    height="566px"
+                  />
+                </picture>
               </div>
               <figcaption class="types__caption">Горный велосипед</figcaption>
             </figure>
@@ -142,14 +164,20 @@
           <li class="types__item">
             <figure class="types__figure">
               <div class="types__image">
-                <img
-                  src="img/child-bicycle.jpg"
-                  srcset="img/child-bicycle@2x.jpg 2x"
-                  alt="милый розовый велоспипед с корзинкой на переднем руле на фоне бежевой стены"
-                  loading="lazy"
-                  width="342px"
-                  height="513px"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="img/child-bicycle.webp, img/child-bicycle@x.webp 2x"
+                  />
+                  <img
+                    src="img/child-bicycle.jpg"
+                    srcset="img/child-bicycle@2x.jpg 2x"
+                    alt="милый розовый велоспипед с корзинкой на переднем руле на фоне бежевой стены"
+                    loading="lazy"
+                    width="342px"
+                    height="513px"
+                  />
+                </picture>
               </div>
               <figcaption class="types__caption">Детский велосипед</figcaption>
             </figure>
@@ -166,14 +194,20 @@
           </p>
           <div class="video__player">
             <div class="video__preview">
-              <img
-                src="img/video-preview.jpg"
-                srcset="img/video-preview@2x.jpg 2x"
-                alt="чёрный велоспед, руль повернут на 45 градусов"
-                width="929"
-                height="522"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/video-preview.webp, img/video-preview@x.webp 2x"
+                />
+                <img
+                  src="img/video-preview.jpg"
+                  srcset="img/video-preview@2x.jpg 2x"
+                  alt="чёрный велоспед, руль повернут на 45 градусов"
+                  width="929"
+                  height="522"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <button class="video__button-play" aria-label="Воспроизвести видео">
               <svg class="video__button-icon" width="65" height="65">
@@ -194,13 +228,19 @@
             19
           </p>
           <div class="address__map">
-            <img
-              src="img/map-fallback.jpg"
-              alt="карта"
-              width="957"
-              height="530"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/map-fallback.webp, img/map-fallback@x.webp 2x"
+              />
+              <img
+                src="img/map-fallback.jpg"
+                alt="карта"
+                width="957"
+                height="530"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -236,7 +276,6 @@
   </body>
 </html>
 
-<!-- TODO: webp -->
 <!-- TODO: vendors.js and IIFFE -->
 <!-- TODO: Закрытие по ESC -->
 <!-- TODO: Проверку стайлилнта npm test -->
