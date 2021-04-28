@@ -27,24 +27,60 @@
 
 .page__hero {
   margin-bottom: 150px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .page__about {
   margin-bottom: 302px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 120px;
+  }
 }
 
 .page__types {
   margin-bottom: 150px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 123px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 108px;
+  }
 }
 
 .page__video {
   margin-bottom: 250px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 155px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 119px;
+  }
 }
 
 .page__address {
   margin-bottom: 35px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
 }
 
 .page__footer {
   padding-bottom: 100px;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 50px;
+  }
 }

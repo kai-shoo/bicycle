@@ -11,6 +11,7 @@
   color: $about-header;
 
   @media (max-width: $tablet) {
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 41px;
   }
@@ -26,6 +27,17 @@
 
   list-style: none;
   counter-reset: listCounter;
+
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 43px;
+  }
+
+  @media (max-width: $mobile) {
+    row-gap: 37px;
+  }
 }
 
 .about__item {
@@ -60,6 +72,10 @@
     letter-spacing: -1.27273px;
 
     color: $about-counter;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 17px;
+    }
   }
 
   @media (max-width: $mobile) {

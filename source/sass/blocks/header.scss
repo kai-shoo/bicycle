@@ -17,8 +17,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 0;
+    margin-bottom: 2px;
     padding-right: 0;
+    padding-left: 23px;
+    padding-top: 0;
 
     .header--active & {
       position: absolute;
@@ -33,6 +36,8 @@
 
     .header--nojs & {
       position: static;
+      height: auto;
+      width: 100vw;
     }
   }
 }
@@ -42,10 +47,15 @@
 
   @media (max-width: $tablet) {
     display: block;
+    margin-top: 23px;
 
     .header--active & {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: -6px;
   }
 }
 
@@ -57,6 +67,10 @@
       display: flex;
       align-self: stretch;
     }
+
+    .header--nojs & {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -66,5 +80,9 @@
   @media (max-width: $tablet) {
     display: block;
     align-self: flex-end;
+
+    .header--nojs & {
+      display: none;
+    }
   }
 }

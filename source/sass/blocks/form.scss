@@ -7,6 +7,15 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.005em;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    margin: 0 0 31px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__container {
