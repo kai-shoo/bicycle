@@ -1,4 +1,4 @@
-$font-family: "Open Sans", verdana, sans-serif;
+$font-family: "Open Sans", v\erdana, sans-serif;
 
 // BREAKPOINTS
 
@@ -11,40 +11,43 @@ $large: 1280px;
 
 $primary: #0ad9c6;
 $error: #e98e3c;
+$white: #ffffff;
+$black: #000000;
+$title: #1f1f1f;
 
 $header-bgc: #0d0d0d;
-$header-bgc-active: #ffffff;
-$nav-link: #ffffff;
-$nav-border: #ffffff;
+$header-bgc-active: $white;
+$nav-link: $white;
+$nav-border: $white;
 $nav-link-bgc-active: #f6f6f6;
 $nav-link-active: #48494d;
 $nav-link-icon: #91929b;
-$nav-link-hover: #0ad9c6;
-$toggle-bgc: #0ad9c6;
-$toggle: #000000;
+$nav-link-hover: $primary;
+$toggle-bgc: $primary;
+$toggle: $black;
 $toggle-close: #d3d3d4;
 
-$address-header: #1f1f1f;
-$address: #000000;
-$contacts-icon: #0ad9c6;
-$contacts-link: #000000;
-$contacts-hover: #0ad9c6;
+$address-header: $title;
+$address: $black;
+$contacts-icon: $primary;
+$contacts-link: $black;
+$contacts-hover: $primary;
 
-$hero: #ffffff;
-$form-tablet: #000000;
-$form-focus: #0ad9c6;
+$hero: $white;
+$form-tablet: $black;
+$form-focus: $primary;
 $form-invalid: #e98e3c;
-$button-bgc: #0ad9c6;
-$button: #000000;
+$button-bgc: $primary;
+$button: $black;
 $input: #1c1c1c;
 $input-border: #c9ccd4;
-$input-bgc: #ffffff;
+$input-bgc: $white;
 
-$about-counter: #0ad9c6;
-$about-header: #1f1f1f;
+$about-counter: $primary;
+$about-header: $title;
 
-$types-decor: #0ad9c6;
+$types-decor: $primary;
 
 $video-bgc: #131314;
-$video-title: #ffffff;
-$video-desc: #ffffff;
+$video-title: $white;
+$video-desc: $white;
