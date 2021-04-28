@@ -1,4 +1,6 @@
 .types > h2 {
+  margin: 0 0 50px 0;
+
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -38,7 +40,7 @@
 
   &:nth-child(3n + 1),
   &:nth-child(3n + 3) {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 }
 
@@ -61,6 +63,8 @@
 
 .types__image {
   position: relative;
+  margin-bottom: 20px;
+
   border-radius: 10px;
 
   @media (max-width: $large) {
@@ -72,8 +76,8 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 2px;
 
     width: 95px;
     height: 95px;
@@ -102,8 +106,8 @@
     }
 
     &::before {
-      bottom: 0;
-      right: 0;
+      bottom: -5px;
+      right: -4px;
       transform: translate(40%, 40%);
     }
   }
@@ -112,7 +116,7 @@
     content: "";
 
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 0;
 
     width: 180px;

@@ -10,6 +10,7 @@ $large: 1280px;
 // COLORS
 
 $primary: #0ad9c6;
+$error: #e98e3c;
 
 $header-bgc: #0d0d0d;
 $header-bgc-active: #ffffff;
@@ -18,6 +19,7 @@ $nav-border: #ffffff;
 $nav-link-bgc-active: #f6f6f6;
 $nav-link-active: #48494d;
 $nav-link-icon: #91929b;
+$nav-link-hover: #0ad9c6;
 $toggle-bgc: #0ad9c6;
 $toggle: #000000;
 $toggle-close: #d3d3d4;
@@ -26,9 +28,12 @@ $address-header: #1f1f1f;
 $address: #000000;
 $contacts-icon: #0ad9c6;
 $contacts-link: #000000;
+$contacts-hover: #0ad9c6;
 
 $hero: #ffffff;
 $form-tablet: #000000;
+$form-focus: #0ad9c6;
+$form-invalid: #e98e3c;
 $button-bgc: #0ad9c6;
 $button: #000000;
 $input: #1c1c1c;

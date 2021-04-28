@@ -26,6 +26,15 @@
 
   color: rgba($contacts-link, 0.5);
 
+  &:hover,
+  &:focus {
+    color: $contacts-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
   &:not(:last-child) {
     margin-right: 90px;
   }

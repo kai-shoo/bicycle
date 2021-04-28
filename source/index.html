@@ -41,7 +41,7 @@
     </header>
 
     <main class="page__main">
-      <section class="hero container">
+      <section class="page__hero hero container">
         <div class="hero__desc">
           <h2>Мы продаем велосипеды</h2>
           <div class="hero__logo">
@@ -79,7 +79,7 @@
         </div>
       </section>
 
-      <section class="about container">
+      <section class="page__about about container">
         <h2>Несколько фактов о нас</h2>
         <ol class="about__list">
           <li class="about__item">Самый широкий выбор велосипедов!</li>
@@ -89,7 +89,7 @@
         </ol>
       </section>
 
-      <section class="types container">
+      <section class="page__types types container">
         <h2>Виды велосипедов</h2>
         <ul class="types__list">
           <li class="types__item">
@@ -131,7 +131,7 @@
         </ul>
       </section>
 
-      <section class="video">
+      <section class="page__video video">
         <div class="video__container container">
           <h2>Видео про велосипеды</h2>
           <p>
@@ -146,17 +146,13 @@
                 alt="чёрный велоспед, руль повернут на 45 градусов"
               />
             </div>
-            <div
-              class="video__button-play"
-              aria-label="Воспроизвести видео"
-              aria-roledescription="button"
-            >
+            <button class="video__button-play" aria-label="Воспроизвести видео">
               <svg width="65" height="65">
                 <use
                   xlink:href="img/sprite_auto.svg#icon-video-play-button"
                 ></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </section>

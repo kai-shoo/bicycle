@@ -9,6 +9,9 @@
 }
 
 .header__container {
+  padding: 0 165px;
+  margin-top: 20px;
+
   @media (max-width: $tablet) {
     display: flex;
     flex-flow: row wrap;
