@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="/fonts/open-sans-v18-latin_cyrillic-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
 
   <body class="page">
     <header class="page__header header header--nojs header--active">
       <div class="header__container container">
-        <div class="header__logo">
+        <a class="header__logo">
           <img src="img/logo.svg" alt="логотип" width="68" height="21" />
-        </div>
+        </a>
 
         <div class="header__toggle toggle">
           <button class="toggle__button" aria-label="toggle menu" type="button">
@@ -59,10 +66,19 @@
 
         <div class="hero__form form">
           <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form class="form__container" method="POST">
+          <form
+            class="form__container"
+            method="POST"
+            action="https://echo.htmlacademy.ru/"
+          >
             <label class="form__label">
               <span class="visually-hidden">Имя</span>
-              <input type="text" name="name" placeholder="Введите Ваше Имя" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Введите Ваше Имя"
+                required
+              />
             </label>
             <label class="form__label">
               <span class="visually-hidden">Телефон</span>
@@ -70,6 +86,7 @@
                 type="tel"
                 name="phone"
                 placeholder="Введите Ваш номер телефона"
+                required
               />
             </label>
             <button class="form__button" type="submit">
@@ -99,6 +116,9 @@
                   src="img/road-bicycle.jpg"
                   srcset="img/road-bicycle@2x.jpg 2x"
                   alt="хромированный велоспипед на фоне кирпичной стены с зеленью свисающей сверху"
+                  loading="lazy"
+                  width="342px"
+                  height="503px"
                 />
               </div>
               <figcaption class="types__caption">Дорожный велосипед</figcaption>
@@ -111,6 +131,9 @@
                   src="img/mountain-bicycle.jpg"
                   srcset="img/mountain-bicycle@2x.jpg 2x"
                   alt="Чёрный велосипед с толтыми шинами на холме, смотрит в сторону гор"
+                  loading="lazy"
+                  width="342px"
+                  height="566px"
                 />
               </div>
               <figcaption class="types__caption">Горный велосипед</figcaption>
@@ -123,6 +146,9 @@
                   src="img/child-bicycle.jpg"
                   srcset="img/child-bicycle@2x.jpg 2x"
                   alt="милый розовый велоспипед с корзинкой на переднем руле на фоне бежевой стены"
+                  loading="lazy"
+                  width="342px"
+                  height="513px"
                 />
               </div>
               <figcaption class="types__caption">Детский велосипед</figcaption>
@@ -144,6 +170,9 @@
                 src="img/video-preview.jpg"
                 srcset="img/video-preview@2x.jpg 2x"
                 alt="чёрный велоспед, руль повернут на 45 градусов"
+                width="929"
+                height="522"
+                loading="lazy"
               />
             </div>
             <button class="video__button-play" aria-label="Воспроизвести видео">
@@ -170,6 +199,7 @@
               alt="карта"
               width="957"
               height="530"
+              loading="lazy"
             />
           </div>
         </div>
@@ -205,3 +235,8 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+<!-- TODO: webp -->
+<!-- TODO: vendors.js and IIFFE -->
+<!-- TODO: Закрытие по ESC -->
+<!-- TODO: Проверку стайлилнта npm test -->

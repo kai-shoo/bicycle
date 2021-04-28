@@ -55,7 +55,7 @@
   }
 
   &:invalid {
-    box-shadow: 0 0 0 2px $form-invalid;
+    color: $form-invalid;
   }
 }
 

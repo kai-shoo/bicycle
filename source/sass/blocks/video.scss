@@ -87,6 +87,8 @@
 
 .video__preview > img {
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .video__button-play {
