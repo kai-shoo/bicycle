@@ -23,6 +23,11 @@
     };
 
     buttonToggle.addEventListener("click", toggleMenu);
+    header.addEventListener("click", (event) => {
+      if (!event.target.classList.contains("nav__link")) return;
+      header.classList.remove("header--active");
+      page.classList.remove("page--block");
+    });
   }
 
   const phoneInput = document.querySelector('input[type="tel"');
