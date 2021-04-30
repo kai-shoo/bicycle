@@ -34,7 +34,7 @@
       padding: 0;
     }
 
-    .header--nojs & {
+    .page--nojs & {
       position: static;
       height: auto;
       width: 100vw;
@@ -69,7 +69,7 @@
       z-index: 1;
     }
 
-    .header--nojs & {
+    .page--nojs & {
       margin-top: 70px;
     }
   }
@@ -82,7 +82,7 @@
     display: block;
     align-self: flex-end;
 
-    .header--nojs & {
+    .page--nojs & {
       display: none;
     }
   }

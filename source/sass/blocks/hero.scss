@@ -13,6 +13,10 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 0;
+
+    .page--nojs & {
+      position: relative;
+    }
   }
 }
 
@@ -40,6 +44,12 @@
 
   @media (max-width: $tablet) {
     min-height: 340px;
+
+    .page--nojs & {
+      min-height: auto;
+      max-height: 300px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -81,7 +91,7 @@
   }
 }
 
-.hero__desc > h2 {
+.hero__desc > h1 {
   margin-top: 23px;
   margin-bottom: 6px;
 

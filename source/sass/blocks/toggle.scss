@@ -37,13 +37,12 @@
 
   width: 22.5px;
   height: 1px;
-  background: $toggle;
+  background-color: $toggle;
 
   transform: translate(-50%, -50%);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease;
+    background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 
   &::before,
   &::after {
@@ -51,7 +50,7 @@
     position: absolute;
     width: 22.5px;
     height: 1px;
-    background: $toggle;
+    background-color: $toggle;
 
     transition: 0.5s;
     transform: translateX(-50%);
@@ -66,18 +65,18 @@
   }
 
   .header--active & {
-    background: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 
     &::before {
       top: 0;
-      background: $toggle-close;
+      background-color: $toggle-close;
       transform: translateX(-50%) rotate(135deg) scaleY(1.4);
     }
 
     &::after {
       top: 0;
 
-      background: $toggle-close;
+      background-color: $toggle-close;
       transform: translateX(-50%) rotate(225deg) scaleY(1.4);
     }
   }
