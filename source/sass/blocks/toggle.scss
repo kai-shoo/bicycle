@@ -28,6 +28,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  .header--active & {
+    height: 50px;
+  }
 }
 
 .toggle__icon {

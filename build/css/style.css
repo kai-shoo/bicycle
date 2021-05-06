@@ -166,6 +166,8 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer; }
+  .header--active .toggle__button {
+    height: 50px; }
 
 .toggle__icon {
   position: absolute;
@@ -228,6 +230,7 @@ a {
   border-bottom: solid rgba(255, 255, 255, 0.2); }
   @media (max-width: 1023px) {
     .nav__list {
+      position: static;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-flow: column nowrap;
@@ -235,7 +238,8 @@ a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      width: 100%; } }
+      width: 100%;
+      overflow-y: scroll; } }
 
 @media (max-width: 1023px) {
   .nav__item {
@@ -306,8 +310,8 @@ a {
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
+          -ms-flex-flow: row;
+              flex-flow: row;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -320,14 +324,18 @@ a {
       padding-left: 23px;
       padding-top: 0; }
       .header--active .header__container {
-        position: absolute;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         background-color: #ffffff;
-        height: 100vh;
         width: 100vw;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap;
+            -ms-flex-flow: column;
+                flex-flow: column;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -337,7 +345,7 @@ a {
         padding: 0; }
       .page--nojs .header__container {
         position: static;
-        height: auto;
+        min-height: auto;
         width: 100vw; } }
 
 .header__logo {
@@ -361,7 +369,7 @@ a {
       display: flex;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-      z-index: 1; }
+      overflow: scroll; }
     .page--nojs .header__nav {
       margin-top: 70px; } }
 

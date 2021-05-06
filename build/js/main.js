@@ -10,7 +10,10 @@
     HEADER.classList.remove("header--active");
 
     const toggleMenu = (event) => {
-      if (event.target.closest(".toggle") || event.key === "Escape") {
+      if (
+        (event.target.closest(".toggle") && event.type === "click") ||
+        event.key === "Escape"
+      ) {
         HEADER.classList.toggle("header--active");
         PAGE.classList.toggle("page--block");
       }

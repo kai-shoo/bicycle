@@ -14,7 +14,7 @@
 
   @media (max-width: $tablet) {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
@@ -24,11 +24,15 @@
     padding-top: 0;
 
     .header--active & {
-      position: absolute;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       background-color: $header-bgc-active;
-      height: 100vh;
       width: 100vw;
-      flex-flow: column wrap;
+      flex-flow: column;
       justify-content: flex-start;
       align-items: flex-start;
       padding: 0;
@@ -36,7 +40,7 @@
 
     .page--nojs & {
       position: static;
-      height: auto;
+      min-height: auto;
       width: 100vw;
     }
   }
@@ -66,7 +70,7 @@
     .header--active & {
       display: flex;
       align-self: stretch;
-      z-index: 1;
+      overflow: scroll;
     }
 
     .page--nojs & {
