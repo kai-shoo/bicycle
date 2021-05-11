@@ -87,7 +87,11 @@
   @media (max-width: $mobile) {
     width: 100%;
     max-width: 430px;
-    margin-bottom: 123px;
+    margin-bottom: 180px;
+  }
+
+  @media (max-width: 428px) {
+    margin-bottom: 124px;
   }
 }
 

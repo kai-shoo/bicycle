@@ -39,22 +39,28 @@
 }
 
 .page__about {
-  margin-bottom: 302px;
+  margin-bottom: 110px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 120px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 70px;
   }
 }
 
 .page__types {
-  margin-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 130px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 123px;
+    padding-top: 47px;
+    padding-bottom: 1px;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 108px;
+    padding-bottom: 42px;
   }
 }
 

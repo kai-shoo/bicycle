@@ -18,7 +18,7 @@
 }
 
 .about__list {
-  margin: 0 -7px;
+  margin: 0 -23px;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
@@ -30,9 +30,9 @@
 
   @media (max-width: $tablet) {
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 35px;
-    row-gap: 43px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0 50px;
   }
 
   @media (max-width: $mobile) {
@@ -47,6 +47,7 @@
   flex-basis: 260px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 43px;
 
   text-align: center;
   justify-content: center;
@@ -81,6 +82,8 @@
   }
 
   @media (max-width: $mobile) {
+    margin-bottom: 0;
+
     font-size: 18px;
     letter-spacing: -0.5px;
   }
