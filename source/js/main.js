@@ -1,4 +1,3 @@
 "use strict";
-
-@include("./menu.js", {});
-@include("./input.js", {});
+@include("./files/menu.js", {});
+@include("./files/input.js", {});
