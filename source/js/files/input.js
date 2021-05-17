@@ -11,7 +11,6 @@
     });
 
     form.addEventListener(`submit`, (e) => {
-      e.preventDefault();
       const formData = new FormData(form);
 
       fetch(`https://echo.htmlacademy.ru/`, {
